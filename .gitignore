@@ -1,0 +1,35 @@
+# --- Các file hệ thống và rác ---
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# --- Môi trường ảo (Virtual Environment) ---
+# Folder này chứa thư viện cài đặt, không cần up lên vì máy khác sẽ tự cài lại
+venv/
+env/
+.env
+
+# --- Dữ liệu AI & Output (Quan trọng cho dự án Bẫy côn trùng) ---
+# Folder chứa ảnh dataset (thường rất nặng, không up lên GitHub)
+datasets/
+images/train/
+images/val/
+
+# Các file Model quá nặng (trên 100MB)
+*.pt
+*.pth
+*.onnx
+*.weights
+*.h5
+
+# Thư mục output khi chạy YOLO (nếu bạn dùng YOLOv5/v8)
+runs/
+yolov5/
+
+# --- File cấu hình IDE (VS Code, Pycharm) ---
+.vscode/
+.idea/
+
+# --- File Log ---
+*.log
